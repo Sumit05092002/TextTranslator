@@ -32,7 +32,7 @@ function App() {
         backgroundColor: "White",
         color: "Black"
       })
-      newbutton("Enable Dark Mode");
+      newbutton("Enable Dark Mode like lovely");
       showAlert("Light mode enabled successfully","success");
     }
   }
