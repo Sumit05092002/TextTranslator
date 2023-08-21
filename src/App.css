@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+nav ul{
+  display:flex;
+  list-style-type: none;
+  width:1350px;
+  justify-content: space-between;
+  height:70px;
+  align-items: center;
+}
+
+#searchbar{
+  padding:15px;
+  border-radius: 50px;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  height:500px;
+  width:1500 px;
+  justify-content:space-between;
+  align-items: center;
+}
+.buttons{
+  display:flex;
+  width:300px;
+  justify-content: space-between;
+}
+button:hover{
+  cursor:pointer;
+}
+.mycontainer{
+  display:flex;
+  height:80px;
+  align-items: center;
+}
+.parent{
+  display:flex;
+  flex-direction: column;
+  height:1000px;
+  width:1525px;
+
+}
+.darkbutton{
+  height:50px;
+
+}
+.alert{
+  display: flex;
+  justify-content: center;
+}
