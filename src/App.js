@@ -13,7 +13,7 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null)
-    }, 3000);
+    }, 1500);
   };
   const [styles, setmystyle] = useState({
     backgroundColor: "White",
@@ -32,7 +32,7 @@ function App() {
         backgroundColor: "White",
         color: "Black"
       })
-      newbutton("Enable Dark Mode like lovely");
+      newbutton("Enable Dark Mode");
       showAlert("Light mode enabled successfully","success");
     }
   }
