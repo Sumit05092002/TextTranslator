@@ -7,8 +7,7 @@ import About from './Components/About';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 function App() {
   const [alert, setAlert] = useState(null);
@@ -29,18 +28,15 @@ function App() {
       color: color
     })
   }
-  var click = 0;
   const darkMode = () => {
-    if (click % 2 === 0) {
+    if (style&&style.color=="Black") {
       mycolor("Black", "White");
       newbutton("Enable Light Mode");
       showAlert("Dark Mode enabled Successfully", "success");
-      click = click + 1;
     } else {
       mycolor("White", "Black");
       newbutton("Enable Dark Mode");
       showAlert("Light Mode enabled successfully", "success");
-      click = click + 1;
     }
   }
   return (
@@ -58,8 +54,8 @@ function App() {
           <br />
           <div className="routed">
             <Routes>
-              <Route path="/" element={<TextArea low="LowerCase" up="UpperCase" showAlert={showAlert}></TextArea>}/>
-              <Route path="/about" element={<About/>}/>
+              <Route exact path="/" element={<TextArea low="LowerCase" up="UpperCase" showAlert={showAlert}></TextArea>}/>
+              <Route exact path="/about" element={<About/>}/>
             </Routes>
           </div>
         </div>

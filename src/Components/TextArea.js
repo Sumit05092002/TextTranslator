@@ -26,11 +26,13 @@ export default function TextArea(props) {
             <textarea name="" id="" value={Text} cols="50" rows="10" onChange={handleOnChange}></textarea>
         </div>
         <div className="buttons">
-            <button onClick={lowerCase}>{props.low}</button>
-            <button onClick={upperCase}>{props.up}</button>
+            <button disabled={Text.length===0} onClick={lowerCase}>{props.low}</button>
+            <button disabled={Text.length===0} onClick={upperCase}>{props.up}</button>
         </div>
         <div className="results">
-            <p>The no of characters are {Text.length} and the no of words are {Text.split(" ").length-1}</p>
+            <p>The no of characters are {Text.length} and the no of words are {Text.split(" ").filter((element)=>{
+              return element.length!==0
+            }).length}</p>
         </div>
       </div>
     </div>
