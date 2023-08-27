@@ -86,3 +86,19 @@ button:hover{
   display: flex;
   justify-content: center;
 }
+.about{
+  display:flex;
+  flex-direction: column;
+  height:500px;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.content{
+  width:500px;
+  height:300px;
+ 
+}
+link{
+  text-decoration: none;
+}
